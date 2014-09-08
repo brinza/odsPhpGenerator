@@ -7,9 +7,9 @@
 namespace odsphpgenerator;
  
 abstract class odsDraw {
-	private $styleGraphic;
-	private $zIndex;           // number 
-	private $tableBackground;  // "true", "false", null
+	protected $styleGraphic;
+	protected $zIndex;           // number 
+	protected $tableBackground;  // "true", "false", null
 	
 	//abstract function __construct();
 	abstract function getContent(ods $ods, \DOMDocument $dom);
